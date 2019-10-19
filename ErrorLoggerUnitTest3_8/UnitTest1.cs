@@ -48,6 +48,8 @@ namespace ErrorLoggerUnitTest3_8
             var logger = new ErrorLogger();
 
             logger.OnErrorLogged(Guid.NewGuid());
+
+            Assert.That(true);
         }
     }
 }
