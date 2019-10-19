@@ -45,7 +45,9 @@ namespace ErrorLoggerUnitTest3_8
         [Test]
         public void OnErrorLogger_WhenCalled_RaiseEvent()
         {
+            var logger = new ErrorLogger();
 
+            logger.OnErrorLogged(Guid.NewGuid());
         }
     }
 }
