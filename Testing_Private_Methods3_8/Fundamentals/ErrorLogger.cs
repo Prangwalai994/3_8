@@ -24,13 +24,13 @@ namespace Testing_Private_Methods3_8.Fundamentals
 
             // Write the log to a storage
             // ...
-
-            OnErrorLogged(Guid.NewGuid());
+            _errorId = Guid.NewGuid();
+            OnErrorLogger();
+          
         }
-
-        public virtual void OnErrorLogged(Guid _errorId)
+        protected virtual void OnErrorLogger()
         {
-            ErrorLogged?.Invoke(this, _errorId);
+            ErrorLogger?.Invoke(this,  _errorId);
         }
         
     }
