@@ -28,7 +28,7 @@ namespace Testing_Private_Methods3_8.Fundamentals
             OnErrorLogged(Guid.NewGuid());
         }
 
-        protected virtual void OnErrorLogged(Guid _errorId)
+        public virtual void OnErrorLogged(Guid _errorId)
         {
             ErrorLogged?.Invoke(this, _errorId);
         }
