@@ -42,14 +42,5 @@ namespace ErrorLoggerUnitTest3_8
             Assert.That(id, Is.Not.EqualTo(Guid.Empty));
 
         }
-        [Test]
-        public void OnErrorLogger_WhenCalled_RaiseEvent()
-        {
-            var logger = new ErrorLogger();
-
-            logger.OnErrorLogged();
-
-            Assert.That(true);
-        }
-    }
+    } 
 }
